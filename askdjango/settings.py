@@ -26,7 +26,7 @@ SECRET_KEY = 'q3)!vq(ky8&3)7i*_%r#wj-st8n__pigyujs=(pf&l$0sl9of)'
 DEBUG = True
 
 ALLOWED_HOSTS = [
- 'c751598d.ngrok.io' 
+
 ]
 
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'dojo',
 ]
 
 MIDDLEWARE = [
@@ -52,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'askdjango.urls'
+ROOT_URLCONF = 'askdjango.urls' #최상의 URL. 여기에서 서브 URL 정의
 
 TEMPLATES = [
     {
