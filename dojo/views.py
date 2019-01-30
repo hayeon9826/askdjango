@@ -34,7 +34,7 @@ def post_list3(request):
 
 def excel_download(request):
     #filepath = 'D:/__khy__/VOD_python/example.xlsx'
-    filepath = os.path.join(settings.BASE_DIR, 'example.xlsx')
+    filepath = os.path.join(settings.BASE_DIR, 'example.xlsx') #지금 askdjango 가 있는 프로젝트 디렉토리
     filename = os.path.basename(filepath) #파일 이름 인자 부분만 추출
     
     with open(filepath, 'rb') as f: #read binary file(텍스트 파일 아닌것 binary)
