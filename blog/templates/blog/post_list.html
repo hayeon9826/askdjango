@@ -8,10 +8,8 @@
     </head>
 <body>
 
-    {{post}}<br>
-    {{author}}
 
-<h1>AskDjango</h1>
+<h1>AskDjango Static 게시판</h1>
 
 <p>
 에스크컴패니 인강듣는중
@@ -25,3 +23,11 @@
 
 </body>
 </html>
+
+<h1>여기는 레알 게시판</h1>
+{%for post in posts%}
+<h2>{{post.title}}</h2>
+<p>{{post.content}}</p>
+<p>created at: {{post.created_at}}</p>
+<p>by<i>{{post.writer}}</i></p><hr>
+{% endfor %}
